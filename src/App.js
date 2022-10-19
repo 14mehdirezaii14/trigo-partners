@@ -15,9 +15,8 @@ import Layout from "./layout/Layout";
 
 function App() {
 
-
+ 
     useLayoutEffect(() => {
-
         gsap.registerPlugin(ScrollTrigger);
         dsnEffect.registerEffect(moveSection, fade, textAnimation)
 
