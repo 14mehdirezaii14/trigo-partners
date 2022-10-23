@@ -9,19 +9,19 @@ import LazyImg from "../LazyImg";
 
 const ServicesDetails = [
     {
-        icon: 'assets/img/services/1.png',
-        title: "DIGITAL PRODUCTS",
-        description: "Web design encompasses many different skills and disciplines in the production of all web.",
+        icon: 'assets/img/services/Group 6.png',
+        title: "International network",
+        description: "The availability of an international business network in MENA, GCC & CIS",
     },
     {
-        icon: 'assets/img/services/2.png',
-        title: "UI-UX DESIGN",
-        description: "Web design encompasses many different skills and disciplines in the production of all web.",
+        icon: 'assets/img/services/cryptocurrency_global.png',
+        title: "High track record",
+        description: "High track record in scaling the business in the Argiculture industry",
     },
     {
-        icon: 'assets/img/services/3.png',
-        title: "WEB DEVELOPMENT",
-        description: "Web design encompasses many different skills and disciplines in the production of all web.",
+        icon: 'assets/img/services/staff.png',
+        title: "Experiense of PE activities",
+        description: "Good level of experience in the know-how of PE activities",
     },
 ]
 

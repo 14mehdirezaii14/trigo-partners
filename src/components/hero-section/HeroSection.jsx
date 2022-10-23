@@ -12,14 +12,14 @@ import ParallaxImage from "../parallax-image/ParallaxImage";
 import {dsnCN} from "../../hooks/helper";
 
 const HeroContent = {
-    title: "Hello we, are \nDsn Grid",
+    title: "Hello we, are Trigo",
     description: `Founded in 2000, Dsn Grid has become one of the best Digital Agency in Themeforest.
      Blue money going forward, but deploy to production. First-order optimal strategies build on a culture of contribution and inclusion so those options`,
     authorTitle: "SALVADOR DALI",
     authorJob: "Digital Artisit",
-    experienceNumber: "25",
+    experienceNumber: "20",
     experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
-    heroImage: '/assets/img/about.jpg'
+    heroImage: '/assets/img/project/project1/TrigoGlobal.png'
 };
 
 

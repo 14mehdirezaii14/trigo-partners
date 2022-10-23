@@ -58,7 +58,7 @@ CustomCursor.defaultProps = {
     duration: 0.5,
     durationChangeSize: 0.3,
     size: 30,
-    scale: 75
+    scale: 7005
 }
 
 export default CustomCursor;

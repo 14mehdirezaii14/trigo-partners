@@ -1,9 +1,9 @@
 import React from "react";
 
 
-import {Container} from "react-bootstrap";
-import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
-import {Helmet} from "react-helmet";
+import { Container } from "react-bootstrap";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 
 import SliderPortfolio from "../../components/slider-portfolio/SliderPortfolio";
@@ -36,36 +36,36 @@ const MainDemo = () => {
 
 
             {/*Start Slider Portfolio*/}
-            <SliderPortfolio tag="header" className="mb-section"/>
+            <SliderPortfolio tag="header" className="mb-section" />
             {/*End Slider Portfolio*/}
 
             {/*Start Hero Section*/}
             <Container className="section-margin dsn-right-container">
-                <HeroSection/>
+                <HeroSection />
             </Container>
             {/*End Hero Section*/}
 
 
             {/*Start Service Section*/}
             <Container className="section-margin">
-                <TitleSection description="Our Services">
-                    New Branding Agency
+                <TitleSection description="OUR FEATURES">
+                    Why Trigo Partner
                 </TitleSection>
-                <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30}/>
+                <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30} />
             </Container>
             {/*End Service Section*/}
 
             {/*Start Box Right Info*/}
-            <HeroSectionTow className="section-margin text-center"/>
+            <HeroSectionTow className="section-margin text-center" />
             {/*End Box Right Info*/}
 
 
-            {/*Start Portfolio Swiper*/}
+            {/*Start SECTORS AND ACTIVITIES*/}
             <Container as={TitleSection} description="Our Work">
-                Creative Portfolio Designs
+                SECTORS AND ACTIVITIES
             </Container>
-            <PortfolioSwiper grabCursor/>
-            {/*End Portfolio Swiper*/}
+            <PortfolioSwiper grabCursor />
+            {/*End SECTORS AND ACTIVITIES*/}
 
 
             {/*Start Box Info With Image*/}
@@ -92,7 +92,7 @@ const MainDemo = () => {
                                 your watch.
                             </p>
                             <div className="button-box" ref={ref}>
-                                <ButtonDefault text="Learn More" icon={faAngleRight} href="#0"/>
+                                <ButtonDefault text="Learn More" icon={faAngleRight} href="#0" />
                             </div>
 
                         </DsnGrid>
@@ -103,7 +103,7 @@ const MainDemo = () => {
 
             {/*Start Testimonial*/}
             <Container className="section-margin">
-                <Testimonial autoHeight loop grabCursor title="Feedback from our clients."/>
+                <Testimonial autoHeight loop grabCursor title="Feedback from our clients." />
             </Container>
             {/*End Testimonial*/}
 
@@ -112,14 +112,14 @@ const MainDemo = () => {
                 <TitleSection description="Latest News">
                     Latest & Greatest Post
                 </TitleSection>
-                <BlogSwiper grabCursor loop autoHeight/>
+                <BlogSwiper grabCursor loop autoHeight />
             </Container>
             {/*End Blog*/}
 
             {/*Start Brand*/}
             <Container className="section-margin">
                 <TitleSection description="Our clients">
-                    Your successful, our <br/> reputation
+                    Your successful, our <br /> reputation
                 </TitleSection>
                 <BrandClient
                     col={3}
@@ -130,8 +130,8 @@ const MainDemo = () => {
             </Container>
             {/*End Brand*/}
 
-            <NextPageContent className="section-margin"/>
-            <Footer/>
+            <NextPageContent className="section-margin" />
+            <Footer />
 
         </React.Fragment>
 
