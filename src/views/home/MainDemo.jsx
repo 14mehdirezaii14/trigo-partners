@@ -71,27 +71,23 @@ const MainDemo = () => {
 
 
             {/*Start Box Info With Image*/}
-            <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
-                <TitleCover>Droow</TitleCover>
+            <BoxImageVertical src="/assets/img/project/project1/group-diverse-people-having-business-meeting 1.png" className="section-margin">
+                <TitleCover>Trigo</TitleCover>
                 <FadeUpTrigger>
                     {(ref) =>
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
                             <h2 className='title-section border-line-left' ref={ref}>
-                                Time Tag Watch.
+                             Our Approach
                             </h2>
                             <h6 ref={ref}>
-                                Sometimes, we need to check the time, wondering when our work or meeting will finish,
-                                without getting caught by others.
+                            We seek to build lasting partnerships underpinned by trust and credibility.
                             </h6>
                             <p ref={ref}>
-                                To avoid your boss’s staring eye, you should not roll your eyes to check the time. The
-                                Time
-                                Tag Watch is a consummately appropriate for it. Those tags do the role of the hands of
-                                the
-                                watch. By rotating the face of the watch not the hands, it gets harder to be damaged. It
-                                provides you with experience to feel the time at the end of your finger without damaging
-                                your watch.
+                            We are looking forward to invest on Early-stage compaines and SEMs, 
+through both entering as lead investor and co-investor.realy on the 
+business network of our diverse multi-disciplinary and multi-nationality
+team,we ‘ll be generating a steady flow of deals to the fund.
                             </p>
                             <div className="button-box" ref={ref}>
                                 <ButtonDefault text="Learn More" icon={faAngleRight} href="#0" />
