@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 
 
 import { Container } from "react-bootstrap";
@@ -22,6 +22,8 @@ import BrandClient from "../../components/brand-client/BrandClient";
 import NextPageContent from "../../components/next/NextPageContent";
 import Footer from "../../components/footer/Footer";
 import HeroSectionTow from "../../components/hero-section/HeroSectionTow";
+// <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+const SectorsSwiper = lazy(() => import('../../components/SectorsSwiper/SectorsSwiper'))
 
 
 const MainDemo = () => {
@@ -64,7 +66,7 @@ const MainDemo = () => {
             <Container as={TitleSection} description="Our Work">
                 SECTORS AND ACTIVITIES
             </Container>
-            <PortfolioSwiper grabCursor />
+            <SectorsSwiper grabCursor />
             {/*End SECTORS AND ACTIVITIES*/}
 
 
