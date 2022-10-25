@@ -100,9 +100,9 @@ team,we ‘ll be generating a steady flow of deals to the fund.
             {/*End  Box Info With Image*/}
 
             {/*Start Testimonial*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <Testimonial autoHeight loop grabCursor title="Feedback from our clients." />
-            </Container>
+            </Container> */}
             {/*End Testimonial*/}
 
             {/*Start Blog*/}

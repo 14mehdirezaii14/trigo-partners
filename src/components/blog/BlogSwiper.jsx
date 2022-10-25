@@ -14,19 +14,19 @@ const BlogDetails = [
     {
         title: "Digital Photography Tips",
         category: ["Photography" , "Brand"],
-        img : "/assets/img/blog/1.jpg",
+        img : "/assets/img/SectorsSwiper/man-using-digital-tablet-psd-mockup-smart-technology 1.png",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     },
     {
         title: "Digital Photography Tips",
         category: "Photography",
-        img : "/assets/img/blog/2.jpg",
+        img : "/assets/img/SectorsSwiper/man-using-digital-tablet-psd-mockup-smart-technology 1.png",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
     },
     {
         title: "Digital Photography Tips",
         category: ["Photography"],
-        img : "/assets/img/blog/3.jpg",
+        img : "/assets/img/SectorsSwiper/man-using-digital-tablet-psd-mockup-smart-technology 1.png",
         description: "Simple point-and-shoot digital cameras can give surprising quality when they have the right lenses and sensors.",
 
     },
