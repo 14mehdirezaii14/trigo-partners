@@ -5,7 +5,7 @@ import type {SmoothScrollbarProps} from "./SmoothScrollbar";
 import DroowMenu from "../components/header/menu/DroowMenu";
 import LoadingPage from "../hooks/LoadingPage";
 import CustomCursor from "./CustomCursor";
-
+import Theme from '../components/Theme/Theme'
 
 interface LayoutProps extends SmoothScrollbarProps {
     tag?: React.ElementType,
@@ -27,6 +27,7 @@ function Layout(
                 scale={75}
                 ease="power2.out"
             />
+            <Theme/>
         </Tag>
     );
 }
