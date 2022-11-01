@@ -11,7 +11,7 @@ import BastianBux from "../../views/portfolio/BastianBux";
 const data = [
     {
         id: 1,
-        title: "Trigo Global Partner",
+        title: "Trigo Partner",
         slug: 'time-tag-watch',
         // category: ['Brand'],
         description: 'Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.',

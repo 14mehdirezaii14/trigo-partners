@@ -81,7 +81,6 @@ const DroowMenu = ({hamburger}) => {
             <Navbar.Brand to={"/"}>
                 <Brand width="80px" height="26px"/>
             </Navbar.Brand>
-
             <Navbar.Collapse cover="Menu">
                 <Nav>
                     {menuContent.map(item => getSubMenu(item))}

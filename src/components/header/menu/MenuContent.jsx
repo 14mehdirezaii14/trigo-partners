@@ -1,6 +1,7 @@
 import React from 'react';
 import {dsnCN} from "../../../hooks/helper";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMoon} from '@fortawesome/free-solid-svg-icons'
 function MenuContent({className}) {
     const socialData = [
         {link: "#0", name: "Dribbble."},
@@ -42,6 +43,7 @@ function MenuContent({className}) {
                     </ul>
                 </div>
             </div>
+            <div className="themeElement"><FontAwesomeIcon icon={faMoon} /></div>
         </div>
     );
 }
