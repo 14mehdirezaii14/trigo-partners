@@ -2,7 +2,7 @@ import React from "react";
 import Navbar, {Nav} from "../../nav/Navbar";
 import Brand from "../../brand/Brand";
 import MenuContent from "./MenuContent";
-
+import Theme from "../../Theme/Theme";
 
 const menuContent = [
     {
@@ -86,6 +86,7 @@ const DroowMenu = ({hamburger}) => {
                     {menuContent.map(item => getSubMenu(item))}
                 </Nav>
                 <MenuContent className="section-margin"/>
+                <Theme/>
             </Navbar.Collapse>
         </Navbar>
     );

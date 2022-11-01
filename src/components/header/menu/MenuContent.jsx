@@ -1,13 +1,15 @@
 import React from 'react';
-import {dsnCN} from "../../../hooks/helper";
+import { dsnCN } from "../../../hooks/helper";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faMoon} from '@fortawesome/free-solid-svg-icons'
-function MenuContent({className}) {
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { useTheme } from 'next-themes';
+import { useEffect } from 'react';
+function MenuContent({ className }) {
     const socialData = [
-        {link: "#0", name: "Dribbble."},
-        {link: "#0", name: "Behance."},
-        {link: "#0", name: "Linkedin."},
-        {link: "#0", name: "Twitter."}
+        { link: "#0", name: "Dribbble." },
+        { link: "#0", name: "Behance." },
+        { link: "#0", name: "Linkedin." },
+        { link: "#0", name: "Twitter." }
     ];
     return (
         <div className={dsnCN('container-content  d-flex flex-column justify-content-center', className)}>
@@ -15,7 +17,7 @@ function MenuContent({className}) {
                 <div className="nav-content">
                     <h5 className="sm-title-block mb-10">Studio</h5>
                     <p>
-                        26-30 New Damietta <br/> El-Mahalla El-Kubra, SK1 66LM
+                        26-30 New Damietta <br /> El-Mahalla El-Kubra, SK1 66LM
                     </p>
 
                 </div>
@@ -28,7 +30,7 @@ function MenuContent({className}) {
                     </p>
                     <p className="links over-hidden">
                         <a className="link-hover" href="mailto:info@dsngrid.com"
-                           data-hover-text="info@dsngrid.com">info@dsngrid.com</a>
+                            data-hover-text="info@dsngrid.com">info@dsngrid.com</a>
                     </p>
                 </div>
             </div>
@@ -43,7 +45,6 @@ function MenuContent({className}) {
                     </ul>
                 </div>
             </div>
-            <div className="themeElement"><FontAwesomeIcon icon={faMoon} /></div>
         </div>
     );
 }

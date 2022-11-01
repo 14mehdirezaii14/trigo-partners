@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React, { useLayoutEffect, useEffect } from "react";
 // Importing the Bootstrap CSS
 import 'swiper/css/pagination';
 
@@ -7,15 +7,19 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import './assets/sass/style.scss';
 
 import Router from "./router/Router";
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import dsnEffect, {fade, moveSection, textAnimation} from "./animation/DsnEffect";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import dsnEffect, { fade, moveSection, textAnimation } from "./animation/DsnEffect";
 import Layout from "./layout/Layout";
+import { useTheme } from "next-themes";
 
 
 function App() {
+    const { theme, setTheme } = useTheme()
 
- 
+    useEffect(() => {
+        console.log(theme)
+    }, [theme])
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         dsnEffect.registerEffect(moveSection, fade, textAnimation)
@@ -33,8 +37,9 @@ function App() {
 
     return (
 
-        <Layout className="v-dark background-main" tag="main">
-            <Router/>
+
+        <Layout className={`${theme === 'dark' ? 'v-dark' : 'light'} background-main`} tag="main">
+            <Router />
         </Layout>
 
 

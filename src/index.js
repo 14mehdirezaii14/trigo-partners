@@ -3,20 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
-import {store} from './app/store'
-import {Provider} from 'react-redux'
-
+import { BrowserRouter } from "react-router-dom";
+import { store } from './app/store'
+import { Provider } from 'react-redux'
+import { ThemeProvider } from 'next-themes'
 
 
 ReactDOM.render(
-    <Provider store={store}>
+    <ThemeProvider>
+        <Provider store={store}>
 
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
 
-    </Provider>,
+        </Provider>
+    </ThemeProvider>,
     document.getElementById('root')
 );
 

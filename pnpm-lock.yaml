@@ -16,6 +16,7 @@ specifiers:
   google-map-react: ^2.1.10
   gsap: ^3.9.1
   isotope-layout: ^3.0.6
+  next-themes: ^0.2.1
   react: ^16.8.6
   react-bootstrap: ^2.1.2
   react-dom: ^16.8.6
@@ -49,6 +50,7 @@ dependencies:
   google-map-react: 2.2.0_wcqkhtmu7mswc6yz4uyexck3ty
   gsap: 3.11.3
   isotope-layout: 3.0.6
+  next-themes: 0.2.1_wcqkhtmu7mswc6yz4uyexck3ty
   react: 16.14.0
   react-bootstrap: 2.5.0_wcqkhtmu7mswc6yz4uyexck3ty
   react-dom: 16.14.0_react@16.14.0
@@ -7247,6 +7249,17 @@ packages:
 
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: false
+
+  /next-themes/0.2.1_wcqkhtmu7mswc6yz4uyexck3ty:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
     dev: false
 
   /no-case/3.0.4:
