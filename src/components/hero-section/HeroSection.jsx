@@ -37,13 +37,13 @@ function HeroSection({className, ...restProps}) {
                         <FadeUpTrigger>
                             {(ref) => <>
                                 <p ref={ref}>{HeroContent.description}</p>
-                                <h5 className='sm-title-block mt-30' ref={ref}>{HeroContent.authorTitle}</h5>
+                                {/* <h5 className='sm-title-block mt-30' ref={ref}>{HeroContent.authorTitle}</h5>
                                 <span className="auth-position mt-10" ref={ref}>{HeroContent.authorJob}</span>
                                 <div className='experience mt-30'>
                                     <span className='number' ref={ref}>{HeroContent.experienceNumber}</span>
                                     <p className="color-heading pre-line"
                                        ref={ref}>{HeroContent.experienceDescription}</p>
-                                </div>
+                                </div> */}
                             </>}
                         </FadeUpTrigger>
 
@@ -51,7 +51,7 @@ function HeroSection({className, ...restProps}) {
                 </Col>
                 <Col className="mt-30" lg={8}>
                     <div className='box-img background-section box-padding'>
-                        <ParallaxImage src={HeroContent.heroImage}  height="100%"/>
+                        <ParallaxImage src={HeroContent.heroImage}  height="300px"/>
                     </div>
                 </Col>
             </Row>

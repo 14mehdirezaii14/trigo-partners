@@ -51,7 +51,7 @@ const MainDemo = () => {
             {/*Start Service Section*/}
             <Container className="section-margin">
                 <TitleSection description="OUR FEATURES">
-                    Why Trigo Partner
+                Our Advantage
                 </TitleSection>
                 <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30} />
             </Container>
