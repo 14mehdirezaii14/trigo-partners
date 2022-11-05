@@ -28,7 +28,7 @@ function LazyImg({src: lp, readAsBlob, targetRef, ...restProps}: LazyImgProps) {
     }, [lp, readAsBlob]);
 
     return (
-        <img src={url} alt={restProps.alt || "Droow Image"}
+        <img src={url} loading='lazy' alt={restProps.alt || "Droow Image"}
              style={{opacity: url ? 1 : 0}} width="100%" height="100%"
              {...restProps} ref={targetRef}/>
     );

@@ -39,7 +39,7 @@ const PortfolioClassic = ({className, ...restProps}: DsnGridProps) => {
             <DsnGrid {...restProps} ref={refIsotope} >
                 {dataPortfolio.map((item, index) =>
                     <PortfolioItem
-                        className={typeof item.category === "object" ? item.category.join(" ").toLowerCase() : item.category.toLowerCase()}
+                        className={typeof item.category === "object" ? item.category.join(" ") : item.category}
                         key={index} portoDetails={item} textButton="View Case"/>)}
             </DsnGrid>
         </section>
