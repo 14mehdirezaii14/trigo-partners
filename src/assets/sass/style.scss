@@ -377,11 +377,36 @@ body {
   top: 50%;
 }
 
-.darkThemeIcon{
+.darkThemeIcon {
   color: #000;
   background: white;
 }
-.lightThemeIcon{
+
+.lightThemeIcon {
   color: white;
   background: #000;
+}
+
+.position-relative {
+  position: relative;
+}
+
+
+.namePersonel {
+  color: white !important;
+  position: relative;
+}
+
+.namePersonel::before {
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 1px;
+  background-color: rgb(150, 150, 150);
+  top: 80px;
+}
+
+.descriptionPersonel {
+  color: white !important;
+  margin-top: 10px;
 }

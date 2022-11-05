@@ -29,20 +29,20 @@ const TimeTagWatch = ({data}) => {
 
     return (
         <React.Fragment>
-            <Helmet>
+            {/* <Helmet>
                 <title>Droow - {data.title} </title>
                 <meta
                     name="description"
                     content={data.description}
                 />
-            </Helmet>
+            </Helmet> */}
             {/*Start Header Half*/}
             <HeaderHalf heroContent={data}
                         parallax={{yPercent: 30, scale: 1.1}}
                         textButton="View Website"
                         href="https://www.behance.net/gallery/57136617/Time-Tag_Watch?tracking_source=search%7Cwatch%20"
                         overlay={data.overlay}>
-                <strong className="color-heading">Seohee Lee</strong> <span> - September 26th 2017</span>
+                {/* <strong className="color-heading">Seohee Lee</strong> <span> - September 26th 2017</span> */}
             </HeaderHalf>
             {/*End Header Half*/}
 
@@ -147,7 +147,7 @@ const TimeTagWatch = ({data}) => {
             />
 
 
-            <NextProject heroContent={nextData} overlay={nextData.overlay}/>
+            <NextProject heroContent={nextData} />
 
 
         </React.Fragment>
