@@ -32,8 +32,8 @@ const MainBrand = styled.div`
 const Brand = ({width, height, alt}) => {
     return (
         <MainBrand className="main-brand" width={width} height={height}>
-            <img className="logo-light" src={brandLight} alt={`${alt} - logo light`} width={width} height={height}/>
-            <img className="logo-dark" src={brandDark} alt={`${alt} - logo dark`} width={width} height={height}/>
+            <img className="logo-light" src={'/assets/img/project/project1/Logo.png'} alt={`${alt} - logo light`} width={width} height={height}/>
+            <img className="logo-dark" src={'/assets/img/project/project1/Logo.png'} alt={`${alt} - logo dark`} width={width} height={height}/>
         </MainBrand>
     );
 }
