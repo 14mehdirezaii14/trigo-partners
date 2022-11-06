@@ -9,27 +9,27 @@ import LazyImg from "../LazyImg";
 import { useTheme } from 'next-themes';
 const ServicesDetails = [
     {
+        darkIcon: 'assets/img/services/Group 6.png',
+        lightIcon: 'assets/img/services/Group 6Light.png',
         title: "International network",
         description: "The availability of an international business network in MENA, GCC & CIS",
-        darkIcon: 'assets/img/services/Group 6.png',
-        lightIcon:'assets/img/services/Group 6Light.png'
     },
     {
         darkIcon: 'assets/img/services/cryptocurrency_global.png',
-        lightIcon:'light',
+        lightIcon: 'assets/img/services/cryptocurrency_global_light.png',
         title: "High track record",
         description: "High track record in scaling the business in the Argiculture industry",
     },
     {
         darkIcon: 'assets/img/services/staff.png',
-        lightIcon:'light',
+        lightIcon: 'assets/img/services/staff_light.png',
         title: "Experiense of PE activities",
         description: "Good level of experience in the know-how of PE activities",
     },
 ]
 
 const ServiceOne = ({ className, ...restProps }: DsnGridProps) => {
-    const {theme,setTheme} = useTheme()
+    const { theme, setTheme } = useTheme()
     return (
         <DsnGrid className={dsnCN('dsn-services service-one', className)} {...restProps}>
             {ServicesDetails.map(
