@@ -12,7 +12,7 @@ const data = [
     {
         id: 1,
         title: "Trigo Partner",
-        slug: 'time-tag-watch',
+        slug: 'about',
         // category: ['Brand'],
         description: 'Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.',
         src: '/assets/img/project/project1/TrigoGlobal.png',
@@ -33,7 +33,7 @@ export const getPortfolioItem = (value, whereName = "id") => {
 };
 export const getPortfolioLink = (item) => {
     if (item)
-        return item.slug && '/portfolio/' + item.slug;
+        return  item.slug;
 
     return '';
 };
