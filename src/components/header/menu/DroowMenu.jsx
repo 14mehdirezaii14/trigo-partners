@@ -14,7 +14,7 @@ const menuContent = [
         // ]
     },
     {
-        name: "found",
+        name: "founds",
         to:'/founds'
         // dropdownMenu: [
         //     {
