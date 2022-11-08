@@ -32,15 +32,16 @@ const data = [
         high growth potential.
         The Fund intends to invest in high potential and non-cyclical industries such as Healthcare , Fintech, Agricultural Tech, etc. Target locations include
         MENA (esp. GCC), and CIS regions.`,
-        to: "portfolio/bastian-bux",
+        to: "founds",
         textButton: "READ more",
         icon: faAngleRight
     },
+
     {
         title: "Business & Investment",
         src: '/assets/img/project/project1/close-up-pen-report 1.png',
         description: `A system that young people around the world with a club culture and techno enthusiasts feel identified. We generated a simple logo that is the basis for generating a geometric and liquid system.`,
-        to: "portfolio/bastian-bux",
+        to: "",
         textButton: "READ more",
         icon: faAngleRight
     }
