@@ -51,7 +51,7 @@ const MainDemo = () => {
             {/*Start Service Section*/}
             <Container className="section-margin">
                 <TitleSection description="OUR FEATURES">
-                Our Advantage
+                    Our Advantage
                 </TitleSection>
                 <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30} />
             </Container>
@@ -78,18 +78,15 @@ const MainDemo = () => {
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
                             <h2 className='title-section text-light border-line-left' ref={ref}>
-                             Our Approach
+                                Our Approach
                             </h2>
                             <h6 className="text-light" ref={ref}>
-                            We seek to build lasting partnerships underpinned by trust and credibility.
+                                Although Private Equity Funds have been best known for being active in Buyout stage, recent reports show an outstanding change in the newly established funds strategy toward expansion and growth.
                             </h6>
                             <p className="text-light" ref={ref}>
-                            We are looking forward to invest on Early-stage compaines and SEMs, 
-through both entering as lead investor and co-investor.realy on the 
-business network of our diverse multi-disciplinary and multi-nationality
-team,we ‘ll be generating a steady flow of deals to the fund.
+                                Although, in 2020 and 2021, the share of private equity capital invested in MENA in relation to the world, is only 1.05% and 1.32% respectively, the pace and interest is growing significantly, where the capital invested in 1H 2022 has been 1.2 times the whole year 2021.
                             </p>
-                           
+
 
                         </DsnGrid>
                     }

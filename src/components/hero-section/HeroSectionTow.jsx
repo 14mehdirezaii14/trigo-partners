@@ -28,10 +28,10 @@ const data = [
     {
         title: "fund 1",
         src: '/assets/img/project/project1/close-up-pen-report 1.png',
-        description: `Trigo Partners is on its way to forming a 7-year Private Equity Fund to invest in companies with
-        high growth potential.
-        The Fund intends to invest in high potential and non-cyclical industries such as Healthcare , Fintech, Agricultural Tech, etc. Target locations include
-        MENA (esp. GCC), and CIS regions.`,
+        description: `Trigo Partners Fund I is a 100 million dollar fund organized to invest in the equity of private companies aiming high growth multiples.
+
+        The size of the fund, the availability of the target companies and industries, and deal sourcing expertise, make Trigo focus on the Expansion & Growth stage of the private equity, bringing a suitable risk-reward profile for its investors. 
+        Historically, growth investing has occupied the gap between early-stage venture capital & traditional buyout investing. Often billed as the best of both worlds, it targets companies that have matured past the highest-risk startup phase of their development, but still have the potential to generate high growth and high returns.`,
         to: "founds",
         textButton: "READ more",
         icon: faAngleRight
@@ -40,7 +40,10 @@ const data = [
     {
         title: "Business & Investment",
         src: '/assets/img/project/project1/close-up-pen-report 1.png',
-        description: `A system that young people around the world with a club culture and techno enthusiasts feel identified. We generated a simple logo that is the basis for generating a geometric and liquid system.`,
+        description: `Trigo Partners Fund I is a 100 million dollar fund organized to invest in the equity of private companies aiming high growth multiples.
+
+        The size of the fund, the availability of the target companies and industries, and deal sourcing expertise, make Trigo focus on the Expansion & Growth stage of the private equity, bringing a suitable risk-reward profile for its investors. 
+        Historically, growth investing has occupied the gap between early-stage venture capital & traditional buyout investing. Often billed as the best of both worlds, it targets companies that have matured past the highest-risk startup phase of their development, but still have the potential to generate high growth and high returns.`,
         to: "",
         textButton: "READ more",
         icon: faAngleRight

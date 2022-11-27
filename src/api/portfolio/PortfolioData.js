@@ -14,7 +14,7 @@ const data = [
         title: "Trigo Partner",
         slug: 'about',
         // category: ['Brand'],
-        description: 'Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.',
+        description: 'A proven Thematic Investment approach to origination of investment opportunities, driven by proprietary research to identify the future champions. Trigo targets high growth sectors and key themes that will be shaping our future.',
         src: '/assets/img/project/project1/TrigoGlobal.png',
         // srcSlider: '/assets/img/project/project1/13.jpg',
         overlay: 2,

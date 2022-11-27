@@ -17,7 +17,7 @@ const ServicesDetails = [
     {
         darkIcon: 'assets/img/services/cryptocurrency_global.png',
         lightIcon: 'assets/img/services/cryptocurrency_global_light.png',
-        title: "High track record",
+        title: "Our Value Creation Plan",
         description: "High track record in scaling the business in the Argiculture industry",
     },
     {

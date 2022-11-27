@@ -16,8 +16,7 @@ import { dsnCN } from "../../hooks/helper";
 import { useTheme } from "next-themes";
 const HeroContent = {
     title: "Hello we, are Trigo",
-    description: `Founded in 2000, Dsn Grid has become one of the best Digital Agency in Themeforest.
-     Blue money going forward, but deploy to production. First-order optimal strategies build on a culture of contribution and inclusion so those options`,
+    description: `The MENA focused growth stage Private Equity fund, equipped with experienced & high-skill managerial & operational team, planning to invest in high-return industries with active engagement in the business to create value for its investors.`,
     authorTitle: "SALVADOR DALI",
     authorJob: "Digital Artisit",
     experienceNumber: "20",
