@@ -7,10 +7,13 @@ import MoveTrigger from "../../animation/MoveTrigger";
 import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 // Component
-import {Col, Row} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import ParallaxImage from "../parallax-image/ParallaxImage";
-import {dsnCN} from "../../hooks/helper";
+import { dsnCN } from "../../hooks/helper";
 
+
+// Theme
+import { useTheme } from "next-themes";
 const HeroContent = {
     title: "Hello we, are Trigo",
     description: `Founded in 2000, Dsn Grid has become one of the best Digital Agency in Themeforest.
@@ -23,15 +26,15 @@ const HeroContent = {
 };
 
 
-function HeroSection({className, ...restProps}) {
-
+function HeroSection({ className, ...restProps }) {
+    const { theme, setTheme } = useTheme()
 
     return (
         <section className={dsnCN('hero-section', className)} {...restProps}>
             <Row>
                 <Col lg={4}>
                     <div className='box-text '>
-                        <MoveTrigger from={{y: 0}} to={{y: -30}} tablet={false} mobile={false}>
+                        <MoveTrigger from={{ y: 0 }} to={{ y: -30 }} tablet={false} mobile={false}>
                             {(ref) => <h2 className='title-section mb-30 pre-line' ref={ref}>{HeroContent.title}</h2>}
                         </MoveTrigger>
                         <FadeUpTrigger>
@@ -50,8 +53,8 @@ function HeroSection({className, ...restProps}) {
                     </div>
                 </Col>
                 <Col className="mt-30" lg={8}>
-                    <div className='box-img background-section box-padding'>
-                        <ParallaxImage src={HeroContent.heroImage}  height="300px"/>
+                    <div className={`box-img ${theme === 'dark' ? 'background-section' : 'bg-green-light'}  box-padding`}>
+                        <ParallaxImage src={HeroContent.heroImage} height="300px" />
                     </div>
                 </Col>
             </Row>

@@ -77,21 +77,19 @@ const MainDemo = () => {
                     {(ref) =>
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
-                            <h2 className='title-section border-line-left' ref={ref}>
+                            <h2 className='title-section text-light border-line-left' ref={ref}>
                              Our Approach
                             </h2>
-                            <h6 ref={ref}>
+                            <h6 className="text-light" ref={ref}>
                             We seek to build lasting partnerships underpinned by trust and credibility.
                             </h6>
-                            <p ref={ref}>
+                            <p className="text-light" ref={ref}>
                             We are looking forward to invest on Early-stage compaines and SEMs, 
 through both entering as lead investor and co-investor.realy on the 
 business network of our diverse multi-disciplinary and multi-nationality
 team,we ‘ll be generating a steady flow of deals to the fund.
                             </p>
-                            <div className="button-box" ref={ref}>
-                                <ButtonDefault text="Learn More" icon={faAngleRight} href="#0" />
-                            </div>
+                           
 
                         </DsnGrid>
                     }

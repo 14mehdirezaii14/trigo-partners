@@ -121,13 +121,13 @@ function About() {
             <BoxImageVertical src="/assets/img/project/project1/group-diverse-people-having-business-meeting 1.png" className="section-margin">
                 <TitleCover>Trigo</TitleCover>
                 <FadeUpTrigger col={1} >
-                    <h2 className='title-section border-line-left'>
+                    <h2 className='title-section border-line-left text-light'>
                         About Us
                     </h2>
-                    <h6 className='my-5'>
+                    <h6 className='my-5 text-light'>
                         We seek to build lasting partnerships underpinned by trust and credibility.
                     </h6>
-                    <p>
+                    <p className='text-light'>
                         We are looking forward to invest on Early-stage compaines and SEMs,
                         through both entering as lead investor and co-investor.realy on the
                         business network of our diverse multi-disciplinary and multi-nationality

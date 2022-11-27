@@ -1,5 +1,14 @@
 @import "../../../assets/sass/helper";
 
+.bg-green-light {
+
+    background-color: #006E51;
+}
+
+.text-green-light {
+    color: #006E51;
+}
+
 .btn-default {
     display: inline-flex;
     align-items: center;
@@ -12,7 +21,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $heading-color;
         width: 30px;
         height: 30px;
         border-radius: 50%;

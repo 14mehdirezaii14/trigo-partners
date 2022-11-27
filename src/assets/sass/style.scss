@@ -113,6 +113,35 @@ html {
   font-size: $font-size-base;
 }
 
+.bg-green-light {
+
+  background-color: #006E51;
+}
+
+.text-green-light {
+  color: #006E51 !important;
+}
+
+.text-stroke-green{
+  -webkit-text-stroke: 1px #006E51 !important;
+}
+
+.text-light {
+  color: white;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.text-dark {
+  color: black;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
 
 body {
   background-color: $bg-color;
