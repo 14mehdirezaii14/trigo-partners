@@ -117,7 +117,7 @@ function About() {
 
                 </Row>
             </Container>
-            {/* End our team */}
+            {/* End our team */} 
             <BoxImageVertical src="/assets/img/project/project1/group-diverse-people-having-business-meeting 1.png" className="section-margin">
                 <TitleCover>Trigo</TitleCover>
                 <FadeUpTrigger col={1} >
