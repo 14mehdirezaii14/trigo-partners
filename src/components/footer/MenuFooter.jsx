@@ -1,14 +1,14 @@
 import React from 'react';
 import NavLink from "../button/NavLink";
-import {dsnCN} from "../../hooks/helper";
+import { dsnCN } from "../../hooks/helper";
 
 
-function MenuFooter({className, ...restProps}) {
+function MenuFooter({ className, ...restProps }) {
     const paginate = [
-        {link: "/portfolio", title: "Portfolio"},
-        {link: "/about", title: "Abut"},
-        {link: "/blog-details", title: "News"},
-        {link: "/contact", title: "Contact"}
+        { link: "/", title: "Home" },
+        { link: "/funds", title: "Funds" },
+        { link: "/about", title: "About" },
+        { link: "/contact", title: "Contact" }
     ];
     return (
         <ul className={dsnCN('col-menu', className)} {...restProps}>

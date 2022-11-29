@@ -11,7 +11,7 @@ import BastianBux from "../../views/portfolio/BastianBux";
 const data = [
     {
         id: 1,
-        title: "Trigo Partner",
+        title: "Trigo Partners",
         slug: 'about',
         // category: ['Brand'],
         description: 'A proven Thematic Investment approach to origination of investment opportunities, driven by proprietary research to identify the future champions. Trigo targets high growth sectors and key themes that will be shaping our future.',

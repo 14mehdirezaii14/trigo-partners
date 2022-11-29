@@ -201,9 +201,9 @@ function HeroSectionTow({ className, typeBg, parallax, tag: Tag = 'div' }) {
                     </SwiperSlide>
                 )}
 
-                <div className="control-num">
+                {/* <div className="control-num">
                     <span className="sup">{((active) <= 9 ? "0" : '') + (active + 1)}</span>
-                </div>
+                </div> */}
                 <ControlNav />
 
             </Swiper>

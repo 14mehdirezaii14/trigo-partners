@@ -13,7 +13,7 @@ function MenuContent({ className }) {
     ];
     return (
         <div className={dsnCN('container-content  d-flex flex-column justify-content-center', className)}>
-            <div className="nav__info">
+            {/* <div className="nav__info">
                 <div className="nav-content">
                     <h5 className="sm-title-block mb-10">Studio</h5>
                     <p>
@@ -44,6 +44,19 @@ function MenuContent({ className }) {
                             </li>)}
                     </ul>
                 </div>
+            </div> */}
+            {/* <p>
+                We identify the companies ahead of the consensus curve.
+                We will not find the winners. We will select them!
+            </p> */}
+            <div className="nav-content">
+                <h5 className="sm-title-block mb-10">Trigo</h5>
+                <p>
+                We identify the companies ahead of the consensus curve.
+                <br />
+                We will not find the winners. We will select them!
+                </p>
+
             </div>
         </div>
     );

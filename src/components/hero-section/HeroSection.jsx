@@ -15,7 +15,7 @@ import { dsnCN } from "../../hooks/helper";
 // Theme
 import { useTheme } from "next-themes";
 const HeroContent = {
-    title: "Hello we, are Trigo",
+    title: "Hello, we are Trigo",
     description: `The MENA focused growth stage Private Equity fund, equipped with experienced & high-skill managerial & operational team, planning to invest in high-return industries with active engagement in the business to create value for its investors.`,
     authorTitle: "SALVADOR DALI",
     authorJob: "Digital Artisit",
@@ -34,7 +34,7 @@ function HeroSection({ className, ...restProps }) {
                 <Col lg={4}>
                     <div className='box-text '>
                         <MoveTrigger from={{ y: 0 }} to={{ y: -30 }} tablet={false} mobile={false}>
-                            {(ref) => <h2 className='title-section mb-30 pre-line' ref={ref}>{HeroContent.title}</h2>}
+                            {(ref) => <h2 className=' mb-30 pre-line' ref={ref}>{HeroContent.title}</h2>}
                         </MoveTrigger>
                         <FadeUpTrigger>
                             {(ref) => <>

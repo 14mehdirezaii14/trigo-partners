@@ -14,7 +14,7 @@ import {Helmet} from "react-helmet";
 
 const headerContent = {
     title: 'Contact',
-    description: `Lat's Tock`
+    description: `LET'S TalK`
 }
 
 function Contact(props) {
@@ -51,9 +51,9 @@ function Contact(props) {
                 </DsnGrid>
             </Container>
 
-            <NextPage className="section-margin" to="/portfolio" text="See More Works.">
+            {/* <NextPage className="section-margin" to="/portfolio" text="See More Works.">
                 Portfolio
-            </NextPage>
+            </NextPage> */}
             <Footer/>
 
 
