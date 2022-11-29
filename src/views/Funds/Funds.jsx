@@ -9,9 +9,9 @@ import ParallaxImage from "../../components/parallax-image/ParallaxImage";
 import LazyImg from "../../components/LazyImg";
 const HeaderHalf = lazy(() => import("../../components/header/HeaderHalf"))
 const heroContent = {
-    category: 'Founds', title: 'Founds', src: '/assets/img/project/project1/coin-wooden-table-blurred-nature 1.png'
+    category: 'Funds', title: 'Funds', src: '/assets/img/project/project1/coin-wooden-table-blurred-nature 1.png'
 }
-const Founds = () => {
+const Funds = () => {
     return (
         <>
             <HeaderHalf heroContent={heroContent}
@@ -55,4 +55,4 @@ const Founds = () => {
     )
 }
 
-export default Founds
+export default Funds

@@ -14,8 +14,8 @@ const menuContent = [
         // ]
     },
     {
-        name: "founds",
-        to:'/founds'
+        name: "Funds",
+        to:'/Funds'
         // dropdownMenu: [
         //     {
         //         name: "Sliders",

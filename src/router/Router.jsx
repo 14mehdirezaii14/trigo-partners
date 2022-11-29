@@ -22,7 +22,7 @@ const ProjectDetails = React.lazy(() => import("../views/portfolio/ProjectDetail
 const About = React.lazy(() => import("../views/About"));
 const Contact = React.lazy(() => import("../views/Contact"));
 const BlogDetails = React.lazy(() => import("../views/blog/BlogDetails"));
-const Found = React.lazy(() => import("../views/Founds/Founds"))
+const Funds = React.lazy(() => import("../views/Funds/Funds"))
 
 
 const Router = () => {
@@ -65,7 +65,7 @@ const Router = () => {
                     <Route exact path="/about" element={<About/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
                     <Route exact path="/blog-details" element={<BlogDetails/>}/>
-                    <Route exact path="/founds" element={<Found/>}/>
+                    <Route exact path="/Funds" element={<Funds/>}/>
                     <Route exact path="*" element={<h1>Not Found</h1>}/>
                 </Routes>
             </Suspense>
