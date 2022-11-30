@@ -10,7 +10,7 @@ import { ThemeProvider } from 'next-themes'
 
 
 ReactDOM.render(
-    <ThemeProvider>
+    <ThemeProvider attribute='class'>
         <Provider store={store}>
 
             <BrowserRouter>

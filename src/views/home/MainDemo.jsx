@@ -101,7 +101,7 @@ const MainDemo = () => {
             {/*End Testimonial*/}
 
             {/*Start Blog*/}
-            <Container className="section-margin dsn-right-container">
+            <Container className="section-margin">
                 <TitleSection description="Latest News">
                     Latest & Greatest Post
                 </TitleSection>

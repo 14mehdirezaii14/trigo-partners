@@ -10,7 +10,7 @@ function ContentSlider({data , activeClass} , ref) {
 
 
     return (
-        <div className="dsn-slider-content hero-content">
+        <div className=" hero-content">
             {data.map((item, key) =>
                 <div className={`slide-content ${activeClass === key ? 'dsn-active' : ''}`} key={key}
                      ref={ref}>

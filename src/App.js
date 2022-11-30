@@ -15,10 +15,10 @@ import { useTheme } from "next-themes";
 
 
 function App() {
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme('light')
 
     useEffect(() => {
-        console.log(theme)
+        setTheme('light')
     }, [theme])
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);

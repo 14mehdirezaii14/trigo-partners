@@ -27,7 +27,7 @@ function Layout(
                 scale={75}
                 ease="power2.out"
             />
-            <Theme/>
+            {/* <Theme/> */}
         </Tag>
     );
 }
