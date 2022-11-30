@@ -77,13 +77,13 @@ const MainDemo = () => {
                     {(ref) =>
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
-                            <h2 className='title-section text-light border-line-left' ref={ref}>
+                            <h2 className='title-section ourApproach  border-line-left' ref={ref}>
                                 Our Approach
                             </h2>
-                            <h6 className="text-light" ref={ref}>
+                            <h6 className=" ourApproach" ref={ref}>
                                 Although Private Equity Funds have been best known for being active in Buyout stage, recent reports show an outstanding change in the newly established funds strategy toward expansion and growth.
                             </h6>
-                            <p className="text-light" ref={ref}>
+                            <p className=" ourApproach" ref={ref}>
                                 Although, in 2020 and 2021, the share of private equity capital invested in MENA in relation to the world, is only 1.05% and 1.32% respectively, the pace and interest is growing significantly, where the capital invested in 1H 2022 has been 1.2 times the whole year 2021.
                             </p>
 

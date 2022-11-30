@@ -504,10 +504,20 @@ body {
   visibility: hidden;
   transition: 0.5s all ease-out;
 }
-
+.aboutPerson:hover .sc-gswNZR::before{
+  background-color: rgba(0, 0, 0, 0.549) !important;
+}
 .aboutPerson:hover .decriptionAll {
   height: 100%;
   opacity: 1;
   visibility: visible;
   display: block;
+}
+
+
+.ourApproach{
+  color: white;
+  @include media_991(max) {
+    color: black !important;
+  }
 }
