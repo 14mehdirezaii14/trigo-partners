@@ -193,7 +193,7 @@ function HeroSectionTow({ className, typeBg, parallax, tag: Tag = 'div' }) {
                             <FadeUpTrigger>
                                 <h2 className="pre-line">{item.title}</h2>
 
-                                <p className="mt-30 m-w750 dsn-auto">{item.description}</p>
+                                <p className="mt-30 m-w750 dsn-auto text-dark">{item.description}</p>
                                 <ButtonDefault className="mt-30" icon={item.icon} text={item.textButton}
                                     to={item.to} />
                             </FadeUpTrigger>

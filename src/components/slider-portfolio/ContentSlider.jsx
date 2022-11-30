@@ -18,7 +18,7 @@ function ContentSlider({data , activeClass} , ref) {
                     {item.title &&
                     <h1  className="title-heading"><NavLink to={getPortfolioLink(item)}>{item.title}</NavLink>
                     </h1>}
-                    {item.description && <div className="dsn-description mt-30">{item.description}</div>}
+                    {item.description && <div className="dsn-description mt-30 text-dark">{item.description}</div>}
                     <ButtonDefault to={getPortfolioLink(item)} className="mt-30" text="About Us"
                                    icon={faAngleRight}/>
                 </div>

@@ -9,7 +9,7 @@
       padding: $box-padding ;
       @include media_991() {
         position: relative;
-        background-color: $assistant-color;
+        background-color: #ffffff88;
       }
     }
 
@@ -31,7 +31,7 @@
       top: 0;
       text-align: left;
       &:before {
-        background: $bg-color;
+        background-color: rgba(249, 249, 249, 0.803);
       }
     }
 

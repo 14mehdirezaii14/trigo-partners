@@ -98,16 +98,20 @@ function About() {
 
                     {Staff.map((item, index) => {
                         return (
-                            <Col key={index} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
-                                <div style={{ overflow: 'hidden' }}>
+                            <Col key={index} onMouseOver={() => {console.log('hover')}} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
+                                <div className='aboutPerson' style={{ overflow: 'hidden' }}>
                                     <BgImage className={"dsn-swiper-parallax-transform"} src={'/assets/img/project/project1/Employee1.png'}
                                         alt={'hello'}
                                         overlay={0} height={"100%"} width={'100%'} />
-                                    <div className='py-5 px-2' style={{ position: 'absolute', top: 0, height: '100%', width: '100%', backgroundColor: '#000000a8', display: 'flex', alignItems: 'flex-end' }}>
-                                        <div>
+                                    <div className='py-5 px-2 contentAboutPerson'>
+                                        <div className='divPerson'>
                                             <h3 className='py-4 text-light namePersonel white'>Michael Abed</h3>
                                             <p className='descriptionPersonel'>TPG Capital, TPG Growth, TPG
                                                 Technology Adjacencies</p>
+                                            {/* all description */}
+                                            <p className=' decriptionAll'>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga autem tempora similique cum quaerat molestias repudiandae possimus cumque nemo.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +121,7 @@ function About() {
 
                 </Row>
             </Container>
-            {/* End our team */} 
+            {/* End our team */}
             <BoxImageVertical src="/assets/img/project/project1/group-diverse-people-having-business-meeting 1.png" className="section-margin">
                 <TitleCover>Trigo</TitleCover>
                 <FadeUpTrigger col={1} >

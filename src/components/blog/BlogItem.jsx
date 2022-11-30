@@ -11,12 +11,12 @@ function BlogItem({src, category, title, description, to}) {
             <div className="box-img">
                 <img src={src} alt=""/>
             </div>
-            <div className="box-content background-section">
+            <div className="box-content background-section bg-green-light text-light">
                 {category && <MetaPost category={category} separate=", "/>}
-                {title && <h4 className='title-block'>
-                    <NavLink to={to}>{title}</NavLink>
+                {title && <h4 className='title-block text-light'>
+                    <NavLink to={to}><span className='text-light'>{title}</span></NavLink>
                 </h4>}
-                {description && <p className="mt-15">{description}</p>}
+                {description && <p className="mt-15 text-light">{description}</p>}
             </div>
         </div>
     )

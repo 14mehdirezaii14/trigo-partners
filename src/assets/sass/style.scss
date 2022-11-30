@@ -30,8 +30,9 @@
   --bg-color: #000;
   --assistant-color: #090909;
   --font-color: rgba(255, 255, 255, 0.68);
-  --heading-color: #fff;
+  --heading-color: #006E51;
   --border-color: rgba(233, 233, 233, 0.1);
+  --green-color: #006E51;
 
   color: var(--font-color);
 }
@@ -122,12 +123,12 @@ html {
   color: #006E51 !important;
 }
 
-.text-stroke-green{
+.text-stroke-green {
   -webkit-text-stroke: 1px #006E51 !important;
 }
 
 .text-light {
-  color: white;
+  color: white !important;
 }
 
 .bg-light {
@@ -207,7 +208,7 @@ body {
   .hero-content {
     position: absolute;
     left: 0;
-    background-color: #f9f9f946;
+    background-color: #f9f9f997;
     height: 100%;
     width: 45%;
     display: flex;
@@ -218,12 +219,13 @@ body {
     @include media_768(min) {
       padding-left: 7vw;
     }
+
     @include media_768(max) {
       width: 100%;
     }
 
   }
-  
+
 
 }
 
@@ -441,7 +443,71 @@ body {
   top: 80px;
 }
 
+.aboutPerson {
+  transition: 1s all ease-out;
+}
+
 .descriptionPersonel {
   color: white !important;
   margin-top: 10px;
+  transition: 0.5s top ease-in-out;
+}
+
+.divPerson {
+  transition: 1s all ease-out !important;
+  position: relative;
+  top: 0;
+}
+
+.contentAboutPerson {
+  transition: 0.5s all ease-out;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000a8;
+  display: flex;
+  align-items: flex-end;
+}
+
+.descriptionPersonel {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s all ease-in-out;
+}
+
+.decriptionAll {
+  color: white !important;
+  margin-top: 10px;
+  display: none;
+  height: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.aboutPerson:hover .divPerson {
+  top: 0px;
+  position: absolute;
+}
+
+.aboutPerson:hover .descriptionPersonel {
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  // position: relative;
+  // height: 0;
+
+}
+
+.decriptionAll {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s all ease-out;
+}
+
+.aboutPerson:hover .decriptionAll {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
