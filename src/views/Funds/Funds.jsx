@@ -56,7 +56,7 @@ const Funds = () => {
 
                             <p className="mt-30 m-w750 dsn-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
-                            <div className="button-box">
+                            <div className="button-box mt-4">
                                 <ButtonDefault text="Learn More" icon={faAngleRight} href="#0" />
                             </div>
                         </FadeUpTrigger>

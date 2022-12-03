@@ -454,7 +454,7 @@ body {
 }
 
 .divPerson {
-  transition: 1s all ease-out !important;
+  transition: 0.5s all ease-out !important;
   position: relative;
   top: 0;
 }
@@ -472,7 +472,6 @@ body {
 
 .descriptionPersonel {
   opacity: 1;
-  visibility: visible;
   transition: 0.5s all ease-in-out;
 }
 
@@ -485,8 +484,7 @@ body {
 }
 
 .aboutPerson:hover .divPerson {
-  top: 0px;
-  position: absolute;
+  top: -300px;
 }
 
 .aboutPerson:hover .descriptionPersonel {
@@ -494,8 +492,6 @@ body {
   opacity: 0;
   visibility: hidden;
   display: none;
-  // position: relative;
-  // height: 0;
 
 }
 
