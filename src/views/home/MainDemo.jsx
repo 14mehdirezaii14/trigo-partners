@@ -77,7 +77,7 @@ const MainDemo = () => {
                     {(ref) =>
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
-                            <h2 className='title-section ourApproach  border-line-left' ref={ref}>
+                            <h2 className='title-section ourApproach  border-line-left text-light' ref={ref}>
                                 Our Approach
                             </h2>
                             <h6 className=" ourApproach" ref={ref}>
