@@ -1,13 +1,14 @@
-import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
+import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import './style.scss';
 import Dropdown from "./Dropdown";
 import Toggle from "./Toggle";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import useEffectScroll from "../../hooks/useEffectScroll";
-import {dsnCN} from "../../hooks/helper";
+import { dsnCN } from "../../hooks/helper";
+import gsap from 'gsap';
 
 
-const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
+const Navbar = ({ children, textOpen, textMenu, textClose, hamburger }) => {
 
     const nav = useRef();
     const [typeNave, setTypeNave] = useState("");
@@ -17,12 +18,21 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
     useEffectScroll((e, x, y) => {
 
         if (y > 170) {
+            gsap.to('.navbar-toggle',{color:'black'})
+            gsap.to('.toggle-line',{backgroundColor:'black'})
+            console.log('test')
             if (scrDown < y) {
+                console.log('if')
                 nav.current.classList.add("nav-bg", "hide-nav");
             } else {
+                console.log('else')
+            
                 nav.current.classList.remove("hide-nav");
             }
         } else {
+            console.log('0')
+            gsap.to('.navbar-toggle',{color:'white'})
+            gsap.to('.toggle-line',{backgroundColor:'white'})
             nav.current.classList.remove("nav-bg", "hide-nav");
         }
 
@@ -48,6 +58,7 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
     const TransEnd = () => {
         if (reserved)
             nav.current.querySelector('.primary-nav').classList.add('open');
+        console.log('test')
     }
 
     const removeOpenMenu = useCallback(() => {
@@ -61,6 +72,7 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
                 setTypeNave("");
                 removeOpenMenu();
                 setReserved(false);
+
             } else
                 setTypeNave("dsn-hamburger");
         };
@@ -95,8 +107,8 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
                 setReserved={setReserved}
                 removeOpenMenu={removeOpenMenu}
             />}
-            <div className="bg background-section"/>
-            <div className="bg background-main" onTransitionEnd={TransEnd}/>
+            <div className="bg background-section" />
+            <div className="bg background-main" onTransitionEnd={TransEnd} />
 
         </header>
     );
@@ -123,7 +135,7 @@ const handleClickCloseMenu = (e) => {
     if (navToggle) navToggle.click();
 }
 
-export const Brand = ({children, ...restProps}) => {
+export const Brand = ({ children, ...restProps }) => {
     return (<div className="main-logo" onClick={handleClickCloseMenu}>
         <Link  {...restProps} >{children}</Link>
     </div>)
@@ -132,7 +144,7 @@ export const Brand = ({children, ...restProps}) => {
 Navbar.Brand = Brand;
 
 
-export const Collapse = ({children, cover}) => {
+export const Collapse = ({ children, cover }) => {
     return (
         <nav className="main-navigation">
             {cover && (<div className="menu-cover-title header-container dsn-container">{cover}</div>)}
@@ -143,21 +155,21 @@ export const Collapse = ({children, cover}) => {
 Navbar.Collapse = Collapse
 
 
-export const Nav = ({children, className, ...restProps}) => {
+export const Nav = ({ children, className, ...restProps }) => {
     return (
         <ul className={dsnCN('primary-nav h2', className)} {...restProps} >{children} </ul>
     );
 };
 
 
-export const ItemLink = ({children, ...restProps}) => {
+export const ItemLink = ({ children, ...restProps }) => {
 
     return (
         <li className="nav-item" onClick={handleClickCloseMenu}>
             <Link {...restProps}>
-            <span className="overflow">
-                {children}
-            </span>
+                <span className="overflow">
+                    {children}
+                </span>
             </Link>
         </li>
     );
@@ -165,7 +177,7 @@ export const ItemLink = ({children, ...restProps}) => {
 Nav.Link = ItemLink;
 
 
-Dropdown.defaultProps = {textBack: 'Back'};
+Dropdown.defaultProps = { textBack: 'Back' };
 Nav.Dropdown = Dropdown;
 
 export {

@@ -26,7 +26,7 @@ import SocialMediaSlider from "../social-media/SocialMediaSlider";
 import { dsnCN } from "../../hooks/helper";
 const data = [
     {
-        title: "fund 1",
+        title: "Fund 1",
         src: '/assets/img/project/project1/close-up-pen-report 1.png',
         description: `Trigo Partners Fund I is a 100 million dollar fund organized to invest in the equity of private companies aiming high growth multiples.
 
