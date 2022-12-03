@@ -34,7 +34,7 @@ function HeroSection({ className, ...restProps }) {
                 <Col lg={4}>
                     <div className='box-text '>
                         <MoveTrigger from={{ y: 0 }} to={{ y: -30 }} tablet={false} mobile={false}>
-                            {(ref) => <h2 className=' mb-30 pre-line' ref={ref}>{HeroContent.title}</h2>}
+                            {(ref) => <h2 className=' mb-30 pre-line text-green-light' ref={ref}>{HeroContent.title}</h2>}
                         </MoveTrigger>
                         <FadeUpTrigger>
                             {(ref) => <>

@@ -15,7 +15,7 @@ const data = [
         slug: 'about',
         // category: ['Brand'],
         description: 'A proven Thematic Investment approach to origination of investment opportunities, driven by proprietary research to identify the future champions. Trigo targets high growth sectors and key themes that will be shaping our future.',
-        src: '/assets/img/project/project1/TrigoGlobal.png',
+        src: '/assets/img/project/project1/sean-pollock-PhYq704ffdA-unsplash 1.png',
         // srcSlider: '/assets/img/project/project1/13.jpg',
         overlay: 2,
         component: (props) => <TimeTagWatch {...props} />

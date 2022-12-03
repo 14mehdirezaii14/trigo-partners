@@ -12,11 +12,7 @@ import TextTrigger from '../animation/TextTrigger';
 import { Col, Row } from 'react-bootstrap';
 import BgImage from '../components/header/BgImage';
 import BoxImageVertical from '../components/box-image-vertical/BoxImageVertical'
-const data = {
-    title: 'THE ART OF LUXURY APPAREL',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis mollitia libero quis odio unde ab
-                officia est dolor.`
-}
+
 
 
 const heroContent = {
@@ -98,7 +94,7 @@ function About() {
 
                     {Staff.map((item, index) => {
                         return (
-                            <Col key={index} onMouseOver={() => {console.log('hover')}} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
+                            <Col key={index} onMouseOver={() => { console.log('hover') }} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
                                 <div className='aboutPerson' style={{ overflow: 'hidden' }}>
                                     <BgImage className={"dsn-swiper-parallax-transform"} src={'/assets/img/project/project1/Employee1.png'}
                                         alt={'hello'}
