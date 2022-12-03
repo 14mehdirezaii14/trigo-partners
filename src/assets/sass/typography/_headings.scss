@@ -68,7 +68,7 @@ h6,
     &::before {
       content: "";
       height: 1px;
-      background: $heading-color;
+      background: white;
       position: absolute;
       transform: translateX(-100%);
       left: -25px;
