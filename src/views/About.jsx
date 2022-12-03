@@ -135,7 +135,7 @@ function About() {
                     </p>
 
                 </FadeUpTrigger>
-            </BoxImageVertical>
+            </BoxImageVertical> 
             <NextPageContent className="section-margin" />
 
 
