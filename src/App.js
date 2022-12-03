@@ -12,6 +12,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import dsnEffect, { fade, moveSection, textAnimation } from "./animation/DsnEffect";
 import Layout from "./layout/Layout";
 import { useTheme } from "next-themes";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
 
         <Layout className={`${theme === 'dark' ? 'v-dark' : 'light'} background-main`} tag="main">
             <Router />
+            <Footer />
         </Layout>
 
 

@@ -124,7 +124,7 @@ const MainDemo = () => {
             {/*End Brand*/}
 
             <NextPageContent className="section-margin" />
-            <Footer />
+            
 
         </React.Fragment>
 
