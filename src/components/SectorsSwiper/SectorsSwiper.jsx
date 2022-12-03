@@ -64,9 +64,18 @@ const SectorsSwiper = ({ desktop, mobile, tablet, ...restProps }) => {
             spaceBetween={30}
             slidesPerView={3}
             breakpoints={{
-                992: desktop,
-                768: tablet,
-                576: mobile
+                992: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                576: {
+                    slidesPerView: 1
+                },
+                320: {
+                    slidesPerView: 1
+                },
             }}
             {...restProps}
         >
