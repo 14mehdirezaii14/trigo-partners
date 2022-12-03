@@ -33,7 +33,7 @@ const MainDemo = () => {
         <React.Fragment>
 
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>Trigo Partners</title>
             </Helmet>
 
 
