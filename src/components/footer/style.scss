@@ -8,7 +8,7 @@
   .dsn-col-footer {
     .footer-title {
       position: relative;
-      color: $heading-color;
+      color: white;
       text-transform: uppercase;
       font-size: 15px;
       padding-bottom: 10px;
@@ -22,7 +22,7 @@
         bottom: 0;
         width: 15px;
         height: 2px;
-        background-color: $heading-color;
+        background-color: white;
       }
     }
 
@@ -46,7 +46,7 @@
       margin-bottom: 10px;
 
       strong {
-        color: $heading-color;
+        color: white;
       }
 
       span {
@@ -59,7 +59,7 @@
 
   a,
   p {
-    color: $body-color;
+    color: white;
     margin-bottom: 0;
     font-size: 11px;
     font-weight: 700;
@@ -73,20 +73,20 @@
   .copyright {
     font-size: 14px;
     letter-spacing: 2.67px;
-    border-top: 1px solid $border-color;
+    border-top: 1px solid white;
 
     p {
       text-transform: uppercase;
     }
 
     .copyright-text {
-      color: $body-color;
+      color: white;
       margin-top: 5px;
       font-weight: 500;
 
       a {
         margin-left: 5px;
-        color: #a56433;
+        color: white;
       }
     }
   }

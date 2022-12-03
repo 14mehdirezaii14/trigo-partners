@@ -18,7 +18,7 @@ function Footer({className, ...restProps}) {
 
 
     return (
-        <footer className={dsnCN('footer background-section', className)} {...restProps}>
+        <footer className={dsnCN('footer bg-green-light text-light', className)} {...restProps}>
             <Container>
                 <div className="footer-links pt-80 pb-40">
                     <DsnGrid col={4} colTablet={2}>
@@ -31,7 +31,7 @@ function Footer({className, ...restProps}) {
                         </div>
 
                         {/*Navigation*/}
-                        <div className='dsn-col-footer '>
+                        <div className='dsn-col-footer text-light '>
                             <h4 className="footer-title">Navigation</h4>
                             <MenuFooter/>
                         </div>
