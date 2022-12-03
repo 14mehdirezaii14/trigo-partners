@@ -137,7 +137,7 @@ function About() {
                 </FadeUpTrigger>
             </BoxImageVertical>
             <NextPageContent className="section-margin" />
-            <Footer />
+
 
 
         </React.Fragment>
