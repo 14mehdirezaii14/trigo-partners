@@ -4,9 +4,13 @@ import TitleCover from "../../components/heading/title-cover/TitleCover";
 import TextTrigger from "../../animation/TextTrigger";
 import FadeUpTrigger from "../../animation/FadeUpTrigger";
 import BoxRight from "../../components/box-right/BoxRight";
-import ButtonDefault from "../../components/button/button-default/ButtonDefault";
 import ParallaxImage from "../../components/parallax-image/ParallaxImage";
 import LazyImg from "../../components/LazyImg";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ButtonDefault from "../../components/button/button-default/ButtonDefault";
+
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 const HeaderHalf = lazy(() => import("../../components/header/HeaderHalf"))
 const heroContent = {
     category: 'Funds', title: 'Funds', src: '/assets/img/project/project1/coin-wooden-table-blurred-nature 1.png'
@@ -25,7 +29,7 @@ const Funds = () => {
             <Container className="section-margin">
                 <TitleCover>Trigo</TitleCover>
                 <TextTrigger duration={0.8} stagger={0.1}>
-                    {(ref) => <h2 className="title-section" ref={ref}>Our Team</h2>}
+                    {(ref) => <h2 className="title-section" ref={ref}>Title 1</h2>}
                 </TextTrigger>
                 <FadeUpTrigger stagger={0.5}>
                     <p className="mt-20">
@@ -40,17 +44,27 @@ const Funds = () => {
             </Container>
             {/* End our team */}
             {/* <ParallaxImage heightMobile="60vh"/> */}
-            <LazyImg src="/assets/img/project/project1/Rectangle 34.png" loading="lazy" contentEditable="hello" />
-            <BoxRight  src="/assets/img/project/project1/close-up-pen-report 1.png">
-                <FadeUpTrigger>
-                    <h2 className="pre-line">Business
-& Investment</h2>
+            <Container fluid className=" section-margin container" >
+                <Row className="text-center">
+                    <Col>
+                        <LazyImg src="/assets/img/project/project1/Rectangle 34.png" loading="lazy" contentEditable="hello" />
+                    </Col>
+                    <Col className="text-left">
+                        <FadeUpTrigger>
+                            <h2 className="pre-line">Business
+                                & Investment</h2>
 
-                    <p className="mt-30 m-w750 dsn-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
-</p>
-                    
-                </FadeUpTrigger>
-            </BoxRight>
+                            <p className="mt-30 m-w750 dsn-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <div className="button-box">
+                                <ButtonDefault text="Learn More" icon={faAngleRight} href="#0" />
+                            </div>
+                        </FadeUpTrigger>
+
+                    </Col>
+                </Row>
+            </Container>
+
         </>
     )
 }
