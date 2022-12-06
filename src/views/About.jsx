@@ -21,34 +21,40 @@ const heroContent = {
 
 const Staff = [
     {
-        img: '/assets/img/project/project1/Employee1.png',
-        name: 'Michael Abed',
-        description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
+        img: 'https://media-exp1.licdn.com/dms/image/C4D03AQFyrRDkRS8L1Q/profile-displayphoto-shrink_200_200/0/1523793079979?e=1675900800&v=beta&t=woq9OFLT8rHnlb2GMeqE9lSBCEGkCOc79MJK3YVNfO0',
+        name: 'Jochen Heim',
+        description: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal',
+        descriptionAll: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal, Tax and Financial Industry Creating and developping alternative investment funds  Private equity investor',
+    },
+    {
+        img: 'https://media-exp1.licdn.com/dms/image/C5603AQGON43PPm2ETQ/profile-displayphoto-shrink_200_200/0/1623892466083?e=1675900800&v=beta&t=G8Y_-87zFHhc_wbszPovE0-zvCt3a0cFRLPoSKmhvOA',
+        name: 'Ali Shekofti',
+        description: 'Investor | Championing Inclusive Capitalism',
+        descriptionAll: 'Investor | Championing Inclusive Capitalism',
     },
     {
         img: '/assets/img/project/project1/Employee1.png',
         name: 'Michael Abed',
         description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
+        descriptionAll: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal',
     },
     {
         img: '/assets/img/project/project1/Employee1.png',
         name: 'Michael Abed',
         description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
+        descriptionAll: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal',
     },
     {
         img: '/assets/img/project/project1/Employee1.png',
         name: 'Michael Abed',
         description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
+        descriptionAll: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal',
     },
     {
         img: '/assets/img/project/project1/Employee1.png',
         name: 'Michael Abed',
         description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
-    },
-    {
-        img: '/assets/img/project/project1/Employee1.png',
-        name: 'Michael Abed',
-        description: 'TPG Capital, TPG Growth, TPG Technology Adjacencies',
+        descriptionAll: 'Outsourcing partner in compliance / regulary affairs Riskmanagement Consultant for financial institutions Strong network in Legal',
     },
 
 ]
@@ -62,7 +68,7 @@ function About() {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Droow - About Us </title>
+                <title>Trigo - About Us </title>
             </Helmet>
             <HeaderHalf heroContent={heroContent}
                 parallax={{ yPercent: 30, scale: 1.1 }}
@@ -96,17 +102,16 @@ function About() {
                         return (
                             <Col key={index} onMouseOver={() => { console.log('hover') }} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
                                 <div className='aboutPerson' style={{ overflow: 'hidden' }}>
-                                    <BgImage className={"dsn-swiper-parallax-transform"} src={'/assets/img/project/project1/Employee1.png'}
+                                    <BgImage   className={"dsn-swiper-parallax-transform"} src={item.img}
                                         alt={'hello'}
                                         overlay={0} height={"100%"} width={'100%'} />
-                                    <div className='py-5 px-2 contentAboutPerson'>
+                                    <div className='pb-5 px-4 contentAboutPerson'>
                                         <div className='divPerson'>
-                                            <h3 className='py-4 text-light namePersonel white'>Michael Abed</h3>
-                                            <p className='descriptionPersonel'>TPG Capital, TPG Growth, TPG
-                                                Technology Adjacencies</p>
+                                            <h3 className='py-4 text-light namePersonel white'>{item.name}</h3>
+                                            <p className='descriptionPersonel'>{item.description}</p>
                                             {/* all description */}
                                             <p className=' decriptionAll'>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga autem tempora similique cum quaerat molestias repudiandae possimus cumque nemo.
+                                                {item.descriptionAll}
                                             </p>
                                         </div>
                                     </div>
@@ -135,7 +140,7 @@ function About() {
                     </p>
 
                 </FadeUpTrigger>
-            </BoxImageVertical> 
+            </BoxImageVertical>
             <NextPageContent className="section-margin" />
 
 

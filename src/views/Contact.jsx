@@ -25,7 +25,7 @@ function Contact(props) {
         <React.Fragment>
 
             <Helmet>
-                <title>Droow - Contact Us </title>
+                <title>Trigo - Contact Us </title>
             </Helmet>
 
             {/*Start Header*/}
