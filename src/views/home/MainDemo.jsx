@@ -78,7 +78,7 @@ const MainDemo = () => {
                         <DsnGrid col={1} rowGap={30} rowGapTablet={20}>
 
                             <h2 className='title-section ourApproach  border-line-left text-light' ref={ref}>
-                                Our Approach
+                                Our Strategy
                             </h2>
                             <h6 className=" ourApproach" ref={ref}>
                                 Although Private Equity Funds have been best known for being active in Buyout stage, recent reports show an outstanding change in the newly established funds strategy toward expansion and growth.
@@ -124,7 +124,7 @@ const MainDemo = () => {
             {/*End Brand*/}
 
             <NextPageContent className="section-margin" />
-            
+
 
         </React.Fragment>
 

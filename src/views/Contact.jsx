@@ -54,7 +54,7 @@ function Contact(props) {
             {/* <NextPage className="section-margin" to="/portfolio" text="See More Works.">
                 Portfolio
             </NextPage> */}
-            <Footer/>
+            {/* <Footer/> */}
 
 
         </React.Fragment>

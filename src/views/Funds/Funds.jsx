@@ -51,8 +51,7 @@ const Funds = () => {
                     </Col>
                     <Col className="text-left">
                         <FadeUpTrigger>
-                            <h2 className="pre-line">Business
-                                & Investment</h2>
+                            <h2 className="pre-line">Fund 1</h2>
 
                             <p className="mt-30 m-w750 dsn-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
