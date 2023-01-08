@@ -18,21 +18,17 @@ const Navbar = ({ children, textOpen, textMenu, textClose, hamburger }) => {
     useEffectScroll((e, x, y) => {
 
         if (y > 170) {
-            gsap.to('.navbar-toggle',{color:'black'})
-            gsap.to('.toggle-line',{backgroundColor:'black'})
-            console.log('test')
+            gsap.to('.navbar-toggle', { color: 'black' })
+            gsap.to('.toggle-line', { backgroundColor: 'black' })
             if (scrDown < y) {
-                console.log('if')
                 nav.current.classList.add("nav-bg", "hide-nav");
             } else {
-                console.log('else')
-            
+
                 nav.current.classList.remove("hide-nav");
             }
         } else {
-            console.log('0')
-            gsap.to('.navbar-toggle',{color:'white'})
-            gsap.to('.toggle-line',{backgroundColor:'white'})
+            gsap.to('.navbar-toggle', { color: 'white' })
+            gsap.to('.toggle-line', { backgroundColor: 'white' })
             nav.current.classList.remove("nav-bg", "hide-nav");
         }
 
@@ -58,7 +54,6 @@ const Navbar = ({ children, textOpen, textMenu, textClose, hamburger }) => {
     const TransEnd = () => {
         if (reserved)
             nav.current.querySelector('.primary-nav').classList.add('open');
-        console.log('test')
     }
 
     const removeOpenMenu = useCallback(() => {

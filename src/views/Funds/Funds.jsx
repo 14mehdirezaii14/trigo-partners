@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import TitleCover from "../../components/heading/title-cover/TitleCover";
 import TextTrigger from "../../animation/TextTrigger";
@@ -16,6 +16,9 @@ const heroContent = {
     category: 'Funds', title: 'Funds', src: '/assets/img/project/project1/coin-wooden-table-blurred-nature 1.png'
 }
 const Funds = () => {
+    useEffect(() => {
+        console.log('Found')
+    }, [])
     return (
         <>
             <HeaderHalf heroContent={heroContent}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 
 import {Container} from "react-bootstrap";
 import DsnGrid from "../components/DsnGrid";
@@ -18,6 +18,10 @@ const headerContent = {
 }
 
 function Contact(props) {
+useEffect(() => {
+console.log('Contact')
+},[])
+
 
     const center = {lat: 30.0489206, lng: 31.258553};
 

@@ -100,7 +100,7 @@ function About() {
 
                     {Staff.map((item, index) => {
                         return (
-                            <Col key={index} onMouseOver={() => { console.log('hover') }} className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
+                            <Col key={index}  className='position-relative mt-5' style={{ overflow: 'hidden' }} xs={12} md={4}>
                                 <div className='aboutPerson' style={{ overflow: 'hidden' }}>
                                     <BgImage   className={"dsn-swiper-parallax-transform"} src={item.img}
                                         alt={'hello'}
